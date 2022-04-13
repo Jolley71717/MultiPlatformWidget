@@ -1,9 +1,11 @@
 plugins {
     kotlin("multiplatform")
+    kotlin("plugin.serialization")
     id("com.android.library")
 }
 
 kotlin {
+    val kotlinxVersion: String by project
     android()
     
     listOf(
@@ -20,6 +22,7 @@ kotlin {
         val commonMain by getting {
             dependencies{
                 implementation("com.benasher44:uuid:0.4.0")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxVersion")
             }
         }
         val commonTest by getting {

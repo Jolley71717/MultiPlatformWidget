@@ -1,12 +1,12 @@
 package com.example.forthewidgets.widget.models
 
-import com.benasher44.uuid.UUID
-import com.benasher44.uuid.Uuid
-import com.benasher44.uuid.bytes
 import com.benasher44.uuid.uuid4
+import kotlinx.serialization.Serializable
+
 //let activityTypeViewKey = "com.alfianlosari.xcanews.view"
 //let activityURLKey = "xcanews.url.key"
 //
+@Serializable
 data class ArticleKT(
     val id: String? = uuid4().toString(),
     val source: Source,
@@ -26,6 +26,7 @@ data class ArticleKT(
 //    }
 }
 
+@Serializable
 data class Source(val name: String)
 
 // TODO would be interesting to add this functionality
