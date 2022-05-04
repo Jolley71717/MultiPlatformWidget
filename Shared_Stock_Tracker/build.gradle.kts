@@ -6,6 +6,7 @@ plugins {
 
 kotlin {
     val kotlinxVersion: String by project
+    val ktorVersion: String by project
     android()
     
     listOf(
@@ -20,9 +21,10 @@ kotlin {
 
     sourceSets {
         val commonMain by getting {
-            dependencies{
+            dependencies {
                 implementation("com.benasher44:uuid:0.4.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxVersion")
+                implementation("io.ktor:ktor-client-core:$ktorVersion")
             }
         }
         val commonTest by getting {
@@ -30,7 +32,11 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
-        val androidMain by getting
+        val androidMain by getting {
+            dependencies {
+                implementation("io.ktor:ktor-client-okhttp:$ktorVersion")
+            }
+        }
         val androidTest by getting
         val iosX64Main by getting
         val iosArm64Main by getting
@@ -40,6 +46,9 @@ kotlin {
             iosX64Main.dependsOn(this)
             iosArm64Main.dependsOn(this)
             iosSimulatorArm64Main.dependsOn(this)
+            dependencies {
+                implementation("io.ktor:ktor-client-darwin:$ktorVersion")
+            }
         }
         val iosX64Test by getting
         val iosArm64Test by getting
