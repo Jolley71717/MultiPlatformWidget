@@ -4,6 +4,12 @@ pluginManagement {
         gradlePluginPortal()
         mavenCentral()
     }
+    val kotlinJvmVersion: String by settings
+    plugins {
+        kotlin("multiplatform") version kotlinJvmVersion
+        kotlin("plugin.serialization") version kotlinJvmVersion
+        kotlin("android") version kotlinJvmVersion
+    }
 }
 
 rootProject.name = "For_The_Widgets"

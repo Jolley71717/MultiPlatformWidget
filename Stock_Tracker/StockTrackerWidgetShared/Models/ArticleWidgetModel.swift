@@ -17,14 +17,13 @@ struct ArticleWidgetModel: Identifiable {
     }
     
     let state: State
-    
     var id: UUID {
         switch state {
             case .placeholder:
                 return UUID()
             case .article(let article, _):
+//            return UUID()
             return  UUID(uuidString: article.id!) ?? UUID()
-                
         }
     }
     
