@@ -4,11 +4,19 @@ pluginManagement {
         gradlePluginPortal()
         mavenCentral()
     }
+    val androidPluginVersion: String by settings
     val kotlinJvmVersion: String by settings
+    val multiplatformResourcesPlugin: String by settings
+
     plugins {
+        kotlin("android") version kotlinJvmVersion
         kotlin("multiplatform") version kotlinJvmVersion
         kotlin("plugin.serialization") version kotlinJvmVersion
-        kotlin("android") version kotlinJvmVersion
+        plugins {
+            id("com.android.application") version androidPluginVersion
+            id("com.android.library") version androidPluginVersion
+            id("dev.icerock.mobile.multiplatform-resources") version multiplatformResourcesPlugin
+        }
     }
 }
 

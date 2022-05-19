@@ -2,10 +2,9 @@ package com.example.forthewidgets.widget.models
 
 import com.benasher44.uuid.uuid4
 import io.ktor.client.*
-import io.ktor.client.request.*
-import io.ktor.client.statement.*
 import kotlinx.serialization.Serializable
-import kotlin.jvm.JvmField
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.json.Json
 
 //let activityTypeViewKey = "com.alfianlosari.xcanews.view"
 //let activityURLKey = "xcanews.url.key"
@@ -42,14 +41,13 @@ data class ArticleKT(
                 return response.bodyAsText()
             }
             */
-            getResources()
-            this.javaClass.classLoader.getResource("app.properties").path
-            this::class.get
 
-            val fileContent = ArticleKT::class.java.getResource("/html/file.html").readText()
+            val newsContent = StreamedFileResource("news").json
+                ?.let { newsJson ->
+                    Json.decodeFromString<List<ArticleKT>>(newsJson)
+                } ?: emptyList()
 
-
-            return@run TODO()
+            return@run newsContent
         }
     }
 
@@ -58,9 +56,7 @@ data class ArticleKT(
 
 // TODO add the expect class herey
 
-expect class FileResource(location: String){
-    val json: String?
-}
+
 
 @Serializable
 data class Source(val name: String)

@@ -2,6 +2,7 @@ plugins {
     kotlin("multiplatform")
     kotlin("plugin.serialization")
     id("com.android.library")
+    id("dev.icerock.mobile.multiplatform-resources")
 }
 
 kotlin {
@@ -25,16 +26,20 @@ kotlin {
                 implementation("com.benasher44:uuid:0.4.0")
                 implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxVersion")
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
+                implementation("dev.icerock.moko:resources:0.20.0")
+
             }
         }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
+                implementation("dev.icerock.moko:resources-test:0.20.0")
             }
         }
         val androidMain by getting {
             dependencies {
                 implementation("io.ktor:ktor-client-okhttp:$ktorVersion")
+                implementation("dev.icerock.moko:resources-compose:0.20.0")
             }
         }
         val androidTest by getting
@@ -69,4 +74,9 @@ android {
         minSdk = 23
         targetSdk = 31
     }
+    namespace = "com.example.forthewidgets"
+}
+
+multiplatformResources {
+    multiplatformResourcesPackage = "com.example.forthewidgets.widget"
 }
