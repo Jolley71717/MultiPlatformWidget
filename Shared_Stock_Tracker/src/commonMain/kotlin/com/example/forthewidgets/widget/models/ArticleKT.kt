@@ -42,10 +42,10 @@ data class ArticleKT(
             }
             */
 
-            val newsContent = StreamedFileResource("news").json
-                ?.let { newsJson ->
+            val newsContent = StreamedFileResource.getJson("news")
+                .let { newsJson ->
                     Json.decodeFromString<List<ArticleKT>>(newsJson)
-                } ?: emptyList()
+                }
 
             return@run newsContent
         }

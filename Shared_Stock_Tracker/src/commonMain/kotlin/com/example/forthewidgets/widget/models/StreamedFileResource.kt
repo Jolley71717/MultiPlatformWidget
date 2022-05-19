@@ -1,5 +1,5 @@
 package com.example.forthewidgets.widget.models
 
-expect class StreamedFileResource(location: String){
-    val json: String?
+expect object StreamedFileResource{
+    fun getJson(location: String): String
 }
