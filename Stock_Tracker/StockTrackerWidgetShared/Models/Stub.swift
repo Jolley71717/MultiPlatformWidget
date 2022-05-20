@@ -7,13 +7,15 @@
 //
 
 import Foundation
+import Shared_Stock_Tracker
 import UIKit
-
 
 extension ArticleWidgetModel {
     static var stubImageData: Data {
-
         UIImage(named: "placeholder")!.jpegData(compressionQuality: 0.7)!
-        
+    }
+    
+    static var stubArticleWithImageData: ArticleWidgetModel {
+        .init(state: .article(article: ArticleKT.companion.previewData[0], imageData: ArticleWidgetModel.stubImageData))
     }
 }

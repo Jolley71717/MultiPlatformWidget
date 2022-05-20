@@ -5,6 +5,7 @@ import io.ktor.client.*
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
+import kotlin.jvm.JvmField
 
 //let activityTypeViewKey = "com.alfianlosari.xcanews.view"
 //let activityURLKey = "xcanews.url.key"
@@ -29,11 +30,9 @@ data class ArticleKT(
 //    }
 
     companion object {
-
-//        @JvmField
+        private val jsonDecoder = Json { ignoreUnknownKeys = true }
         val client = HttpClient()
-
-//        @JvmField
+        @JvmField
         val previewData: List<ArticleKT> = run {
             /* Will want to use this later to perform queries
             suspend fun getHtml(): String {
@@ -42,15 +41,13 @@ data class ArticleKT(
             }
             */
 
-            val newsContent = StreamedFileResource.getJson("news")
-                .let { newsJson ->
-                    Json.decodeFromString<List<ArticleKT>>(newsJson)
-                }
-
-            return@run newsContent
+            return@run StreamedFileResource.getJson("news")
+                .let(this::jsonToArticleResponse)
+                .articles
         }
-    }
 
+        private fun jsonToArticleResponse(json: String) = jsonDecoder.decodeFromString<ArticleResponse>(json)
+    }
 }
 
 

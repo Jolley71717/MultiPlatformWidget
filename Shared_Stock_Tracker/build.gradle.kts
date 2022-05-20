@@ -74,7 +74,7 @@ android {
         minSdk = 23
         targetSdk = 31
     }
-    namespace = "com.example.forthewidgets"
+//    namespace = "com.example.forthewidgets"
 }
 
 multiplatformResources {

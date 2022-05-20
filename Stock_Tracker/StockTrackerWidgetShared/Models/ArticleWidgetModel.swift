@@ -31,7 +31,7 @@ struct ArticleWidgetModel: Identifiable {
         switch state {
         case .placeholder:
             return "this is just placeholder text"
-        case .article(let article, let _):
+        case .article(let article, _):
             return article.title
         }
     }
@@ -40,7 +40,7 @@ struct ArticleWidgetModel: Identifiable {
         switch state {
         case .placeholder:
             return "this is just placeholder text"
-        case .article(let article, let _):
+        case .article(let article, _):
             return article.descriptionText
         }
     }
@@ -50,7 +50,7 @@ struct ArticleWidgetModel: Identifiable {
         switch state {
         case .placeholder:
             return URL(string: "Stock_Tracker://home")!
-        case .article(let article, let _):
+        case .article(let article, _):
             return URL(string: article.url)!
         }
     }

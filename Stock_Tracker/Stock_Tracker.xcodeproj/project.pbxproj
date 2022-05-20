@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -248,10 +248,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48CAF62D28065A4B008867C5 /* Build configuration list for PBXNativeTarget "SharedStockWidgetExtension" */;
 			buildPhases = (
+				48CAF62E28065E0E008867C5 /* ShellScript */,
 				48CAF61528065A4A008867C5 /* Sources */,
 				48CAF61628065A4A008867C5 /* Frameworks */,
 				48CAF61728065A4A008867C5 /* Resources */,
-				48CAF62E28065E0E008867C5 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -302,7 +302,7 @@
 				};
 			};
 			buildConfigurationList = 7555FF76242A565900829871 /* Build configuration list for PBXProject "Stock_Tracker" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
