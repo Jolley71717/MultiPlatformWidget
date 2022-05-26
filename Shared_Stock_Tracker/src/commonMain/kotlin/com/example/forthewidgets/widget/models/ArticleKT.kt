@@ -25,8 +25,13 @@ data class ArticleKT(
     val authorText = author ?: ""
     val descriptionText = description ?: ""
     fun getCaptionText(): String = "${source.name} ‧ $publishedAt" // todo look at creating specific ones for ios
-    //    var captionText: String {
-//        "\(source.name) ‧ \(relativeDateFormatter.localizedString(for: publishedAt, relativeTo: Date()))"
+
+
+//    static var previewCategoryArticles: [CategoryArticlesKt]? {
+//        let articles = companion.previewData
+//                return CategoryKt.companion.allCases().map {
+//                    .init(categoryKt: $0, articles: articles.shuffled())
+//                }
 //    }
 
     companion object {
@@ -41,19 +46,17 @@ data class ArticleKT(
             }
             */
 
-            return@run StreamedFileResource.getJson("news")
+            return@run StreamedFileResource.NEWS_JSON
                 .let(this::jsonToArticleResponse)
                 .articles
         }
+        @JvmField
+        val previewCategoryArticles: List<CategoryArticlesKt> = CategoryKt.values()
+            .map { CategoryArticlesKt(categoryKt = it, articles = previewData.shuffled() ) }
 
         private fun jsonToArticleResponse(json: String) = jsonDecoder.decodeFromString<ArticleResponse>(json)
     }
 }
-
-
-// TODO add the expect class herey
-
-
 
 @Serializable
 data class Source(val name: String)

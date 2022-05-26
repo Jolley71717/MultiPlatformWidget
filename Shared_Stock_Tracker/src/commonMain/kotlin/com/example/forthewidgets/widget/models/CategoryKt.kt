@@ -1,7 +1,6 @@
 package com.example.forthewidgets.widget.models
 
-
-enum class CategoryKt{
+enum class CategoryKt {
     GENERAL,
     BUSINESS,
     TECHNOLOGY,
@@ -11,7 +10,8 @@ enum class CategoryKt{
     HEALTH;
 
     val text = this.name
-    fun allCases() = CategoryKt.values().asList()
-    fun allACases() = CategoryKt.values().asIterable()
+    companion object {
+        fun allCases() = values().asList()
+        fun allACases() = values().asIterable()
+    }
 }
-

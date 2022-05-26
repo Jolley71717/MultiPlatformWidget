@@ -19,6 +19,8 @@
 		484259212807604F00D2957C /* ModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842591F2807604F00D2957C /* ModelExtensions.swift */; };
 		48425927280766F700D2957C /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48425926280766F700D2957C /* Stub.swift */; };
 		48425928280766F700D2957C /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48425926280766F700D2957C /* Stub.swift */; };
+		4842858228388501003236EC /* ArticleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842858128388501003236EC /* ArticleProvider.swift */; };
+		4842858328388501003236EC /* ArticleProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842858128388501003236EC /* ArticleProvider.swift */; };
 		48CAF61B28065A4A008867C5 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CAF61A28065A4A008867C5 /* WidgetKit.framework */; };
 		48CAF61D28065A4A008867C5 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CAF61C28065A4A008867C5 /* SwiftUI.framework */; };
 		48CAF62028065A4A008867C5 /* SharedStockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CAF61F28065A4A008867C5 /* SharedStockWidget.swift */; };
@@ -51,6 +53,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		4842858428388C27003236EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7555FF73242A565900829871 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48CAF61828065A4A008867C5;
+			remoteInfo = SharedStockWidgetExtension;
+		};
 		48CAF62728065A4B008867C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7555FF73242A565900829871 /* Project object */;
@@ -92,6 +101,7 @@
 		4842591C28075D4600D2957C /* Category+Intent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+Intent.swift"; sourceTree = "<group>"; };
 		4842591F2807604F00D2957C /* ModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelExtensions.swift; sourceTree = "<group>"; };
 		48425926280766F700D2957C /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		4842858128388501003236EC /* ArticleProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleProvider.swift; sourceTree = "<group>"; };
 		48CAF61928065A4A008867C5 /* SharedStockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SharedStockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		48CAF61A28065A4A008867C5 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		48CAF61C28065A4A008867C5 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -158,6 +168,7 @@
 			children = (
 				48CAF63028066A6A008867C5 /* Models */,
 				48CAF62128065A4A008867C5 /* SharedStockWidget.intentdefinition */,
+				4842858128388501003236EC /* ArticleProvider.swift */,
 			);
 			path = StockTrackerWidgetShared;
 			sourceTree = "<group>";
@@ -266,17 +277,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7555FFA5242A565B00829871 /* Build configuration list for PBXNativeTarget "Stock_Tracker" */;
 			buildPhases = (
+				7555FFB5242A651A00829871 /* Run Script */,
 				7555FF77242A565900829871 /* Sources */,
 				7555FF78242A565900829871 /* Frameworks */,
 				7555FF79242A565900829871 /* Resources */,
 				7555FFB4242A642300829871 /* Embed Frameworks */,
 				48CAF62A28065A4B008867C5 /* Embed App Extensions */,
-				7555FFB5242A651A00829871 /* Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				48CAF62828065A4B008867C5 /* PBXTargetDependency */,
+				4842858528388C27003236EC /* PBXTargetDependency */,
 			);
 			name = Stock_Tracker;
 			productName = Stock_Tracker;
@@ -389,6 +401,7 @@
 				484259212807604F00D2957C /* ModelExtensions.swift in Sources */,
 				4842591E28075D4600D2957C /* Category+Intent.swift in Sources */,
 				48425928280766F700D2957C /* Stub.swift in Sources */,
+				4842858328388501003236EC /* ArticleProvider.swift in Sources */,
 				48CAF64C28066D71008867C5 /* DataFetchPhase.swift in Sources */,
 				48CAF64428066D71008867C5 /* NewsAPIResponse.swift in Sources */,
 				48CAF64028066D71008867C5 /* ArticleSW.swift in Sources */,
@@ -419,6 +432,7 @@
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
 				48CAF63D28066D71008867C5 /* DataStore.swift in Sources */,
 				48CAF64528066D71008867C5 /* PagingData.swift in Sources */,
+				4842858228388501003236EC /* ArticleProvider.swift in Sources */,
 				48CAF64328066D71008867C5 /* NewsAPIResponse.swift in Sources */,
 				48425927280766F700D2957C /* Stub.swift in Sources */,
 				48CAF64728066D71008867C5 /* CategoryArticles.swift in Sources */,
@@ -431,6 +445,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		4842858528388C27003236EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48CAF61828065A4A008867C5 /* SharedStockWidgetExtension */;
+			targetProxy = 4842858428388C27003236EC /* PBXContainerItemProxy */;
+		};
 		48CAF62828065A4B008867C5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 48CAF61828065A4A008867C5 /* SharedStockWidgetExtension */;

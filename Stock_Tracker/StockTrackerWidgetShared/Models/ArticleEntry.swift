@@ -19,5 +19,4 @@ struct ArticleEntry: TimelineEntry {
     let date: Date
     let state: State
     let category: CategoryKt
-    
 }

@@ -12,7 +12,7 @@ import Shared_Stock_Tracker
 struct ArticleWidgetModel: Identifiable {
     
     enum State {
-        case placeholder
+    case placeholder
         case article(article: ArticleKT, imageData: Data?)
     }
     
