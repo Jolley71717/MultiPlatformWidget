@@ -12,7 +12,7 @@ import Shared_Stock_Tracker
 struct ArticleWidgetModel: Identifiable {
     
     enum State {
-        case placeholder
+    case placeholder
         case article(article: ArticleKT, imageData: Data?)
     }
     
@@ -22,7 +22,6 @@ struct ArticleWidgetModel: Identifiable {
             case .placeholder:
                 return UUID()
             case .article(let article, _):
-//            return UUID()
             return  UUID(uuidString: article.id!) ?? UUID()
         }
     }
@@ -31,8 +30,8 @@ struct ArticleWidgetModel: Identifiable {
         switch state {
         case .placeholder:
             return "this is just placeholder text"
-        case .article(let article, let _):
-            return article.title
+        case .article(let article, _):
+            return article.title ?? ""
         }
     }
     
@@ -40,7 +39,7 @@ struct ArticleWidgetModel: Identifiable {
         switch state {
         case .placeholder:
             return "this is just placeholder text"
-        case .article(let article, let _):
+        case .article(let article, _):
             return article.descriptionText
         }
     }
@@ -50,8 +49,8 @@ struct ArticleWidgetModel: Identifiable {
         switch state {
         case .placeholder:
             return URL(string: "Stock_Tracker://home")!
-        case .article(let article, let _):
-            return URL(string: article.url)!
+        case .article(let article, _):
+            return URL(string: article.url ?? "")!
         }
     }
     
