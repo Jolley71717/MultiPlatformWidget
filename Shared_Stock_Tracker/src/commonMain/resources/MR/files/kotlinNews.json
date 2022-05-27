@@ -1,0 +1,266 @@
+{
+  "status": "ok",
+  "totalResults": 90,
+  "articles": [
+    {
+      "source": {
+        "id": null,
+        "name": "Sigplan.org"
+      },
+      "author": null,
+      "title": "Language Design in the Real World",
+      "description": "Real programming languages are living things, changing and evolving. As with any production code, most of their designer’s time is spent on bug fixing and small improvements, rather than on the rad…",
+      "url": "https://blog.sigplan.org/2022/05/19/language-design-in-the-real-world/",
+      "urlToImage": "https://blog.sigplan.org/wp-content/uploads/2022/05/abbe-sublett-nxZDMUQhN4o-unsplash-scaled.jpg",
+      "publishedAt": "2022-05-21T09:41:28Z",
+      "content": "Real programming languages are living things, changing and evolving. As with any production code, most of their designers time is spent on bug fixing and small improvements, rather than on the radica… [+14148 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Googleblog.com"
+      },
+      "author": "Android Developers",
+      "title": "Learn Android with Jetpack Compose (no programming experience needed!)",
+      "description": "Posted by Murat Yener              There are many fulfilling opportunities found in Android development: from launching a career, express...",
+      "url": "https://android-developers.googleblog.com/2022/05/new-android-basics-with-compose-course.html",
+      "urlToImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi049RNjBQZYK_MdsM7IkmN_zTVCqlhCBvOW76D4rkOYyYg6MH9ArKkumVC94eZmCsVmRY6xl3zFY44XT07GUn9Zp70QgCqp9X2zrsO19BMRz8iIG2aOcYr0QuGM5SaCWf_nO8cRzLAK5A8EVvRbxAe5o_sUYruYL3AbGSYzYWEPu_j63dIA0A_i9Yo/w1200-h630-p-k-no-nu/Android-basics-in-compose-social-V2.png",
+      "publishedAt": "2022-05-02T16:59:00Z",
+      "content": "Posted by Murat Yener\n\n\n  \n \n\n\n\nThere are many fulfilling opportunities found in Android development: from launching a career, expressing yourself in fun ways, working on an app that makes a differen… [+2433 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Googleblog.com"
+      },
+      "author": "Android Developers",
+      "title": "Google I/O 2022: What’s new in Jetpack",
+      "description": "Posted by Amanda Alexander, Product Manager, Android                   Android Jetpack  is a key pillar of Modern Android Development .  ...",
+      "url": "https://android-developers.googleblog.com/2022/05/whats-new-in-jetpack.html",
+      "urlToImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKQLIQnPPWDW7u7YSnhcMLldokGLBkwZRqwBM9l1LmoT2sm6QlVz1qsXgaW-zX7n3O1NXsmbDF82SY0ff1p-u2ERfEisgUGpCkZeJOccJN2aqs9ZraTVqTswC15TagbbZIRJ7EzH3lVYMfNJML8GnCvoHJJbeQ7ykN6gxuum3eBdxRRuSv0qb8W0gK/w1200-h630-p-k-no-nu/image5.png",
+      "publishedAt": "2022-05-11T19:20:00Z",
+      "content": "Posted by Amanda Alexander, Product Manager, Android\n\n\n  \n \n \n \n\n\n\nAndroid Jetpack is a key pillar of Modern Android Development. It is a suite of over 100 libraries, tools and guidance to help devel… [+14397 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Googleblog.com"
+      },
+      "author": "Android Developers",
+      "title": "Now in Android - a new, open source, real-world sample app",
+      "description": "Posted by Paris Hsu , Product & Design, Android and  Don Turner , Developer Relations Engineer, Android     The Now in Android app is n...",
+      "url": "https://android-developers.googleblog.com/2022/05/now-in-android-sample-app-alpha.html",
+      "urlToImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCfJQnd9fqg_J5d_j4lWDbJQ-u-sHd_Z_z8srVPoEuO3_CWY3eVZBulaRTPxqQV3VNkA_1qqkleLVYBI7tRtSIZsOsIDzOKKstOLehI8a1RAUwFgHpXY-3kEmoEPujjQZU1VUk08DesedqDdiA1ZOxUxR-XJIMb66G3gruUq3cxqHwokSQSWycIRPl/w1200-h630-p-k-no-nu/Now-in-Android%28Splash%29.jpg",
+      "publishedAt": "2022-05-12T17:00:00Z",
+      "content": "Posted by Paris Hsu, Product & Design, Android and \nDon Turner, Developer Relations Engineer, Android\n\n\n\n\nThe Now in Android app is now on GitHub!\n\n\nFor two years, 'Now in Android' has been a popular… [+2059 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Raywenderlich.com"
+      },
+      "author": null,
+      "title": "Kotlin Coroutines by Tutorials [SUBSCRIBER]",
+      "description": "<p>The importance of concurrency is discovered quite early on by people who start with Android development. Android is inherently asynchronous and event-driven, with strict requirements as to on which thread certain things can happen.</p>\n<p>Add to this the o…",
+      "url": "https://www.raywenderlich.com/books/kotlin-coroutines-by-tutorials/v3.0",
+      "urlToImage": "https://assets.alexandria.raywenderlich.com/books/2fd19ce5cc96363146a4be1861db251a582ed169fb5435a8327aad7c64e60353/images/4c29204cffc300293f062fcf7842dfd9/original.png",
+      "publishedAt": "2022-05-11T00:00:00Z",
+      "content": "The importance of concurrency is discovered quite early on by people who start with Android development. Android is inherently asynchronous and event-driven, with strict requirements as to on which t… [+6238 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Raywenderlich.com"
+      },
+      "author": null,
+      "title": "Functional Programming in Kotlin by Tutorials [SUBSCRIBER]",
+      "description": "<p>Functional programming is a powerful paradigm for bulding your applications.\nThis book will teach you the fundamendals of functional programming in a practical,\nhands-on way, while showing you how you can safely handle errors and state changes\nin your prog…",
+      "url": "https://www.raywenderlich.com/books/functional-programming-in-kotlin-by-tutorials/v1.0",
+      "urlToImage": "https://assets.alexandria.raywenderlich.com/books/86048c1f8ce818d09828b65b3f454c3893faf94c912fe498f0cebcf4b0a85afa/images/3537d3d439f88314a41ea0fdbb7039f1/original.png",
+      "publishedAt": "2022-05-04T00:00:00Z",
+      "content": "Functional programming is a powerful paradigm for bulding your applications.\r\nThis book will teach you the fundamendals of functional programming in a practical,\r\nhands-on way, while showing you how … [+6025 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Googleblog.com"
+      },
+      "author": "Android Developers",
+      "title": "Boost the security of your app with the nonce field of the Play Integrity API",
+      "description": "Posted by Oscar Rodriguez, Developer Relations Engineer            With the recent launch of the Play Integrity API , more developers are...",
+      "url": "https://android-developers.googleblog.com/2022/05/boost-security-of-your-app-with-nonce.html",
+      "urlToImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhK6rizspchwKjB33qZ1VeQFsLOiH9LnX7FCBSRw77grkEnqb-7rQy7C2bZmpJv_Qb5tsUjMnjBOzsNu-xD_TsEvfyxeOSBPCOafpC9ck0E0wlyzsgwvNHDh5-zpvPL4xlsVLWtTD0KldJYQGpE5F00E1rtsJ6yKD3bylbmih0FlW3l9Sp9xuel8r-_/w1200-h630-p-k-no-nu/Android_BoostSecurityPlayNonceFieldAPI-02.jpg",
+      "publishedAt": "2022-05-17T17:00:00Z",
+      "content": "Posted by Oscar Rodriguez, Developer Relations Engineer\n \n \n\n \nWith the recent launch of the Play Integrity API, more developers are now taking action to protect their games and apps from potentially… [+10981 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "XDA Developers"
+      },
+      "author": "Pranob Mehrotra",
+      "title": "Google’s ‘Now in Android’ app aims to help app developers build better apps",
+      "description": "At its I/O developer conference this year, Google showcased a new ‘Now in Android’ app for developers. The app aims to help developers stay up to date with all areas of Android development and showcase best practices, opinionated designs, and solutions to com…",
+      "url": "https://www.xda-developers.com/google-now-in-android-app/",
+      "urlToImage": "https://www.xda-developers.com/files/2022/05/Now-in-Android-app-featured.jpg",
+      "publishedAt": "2022-05-19T07:25:09Z",
+      "content": "At its I/O developer conference this year, Google showcased a new ‘Now in Android’ app for developers. The app aims to help developers stay up to date with all areas of Android development and showca… [+1946 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Github.com"
+      },
+      "author": "spacedriveapp",
+      "title": "Spacedrive – a cross-platform file explorer, powered by a distributed filesystem",
+      "description": "Spacedrive is an open source cross-platform file explorer, powered by a virtual distributed filesystem written in Rust. - GitHub - spacedriveapp/spacedrive: Spacedrive is an open source cross-platf...",
+      "url": "https://github.com/spacedriveapp/spacedrive",
+      "urlToImage": "https://opengraph.githubassets.com/70bd6a62a24b2ad1a60a7e28671fa2e03c25c7d474f53dcdf24f42c5d5e363c3/spacedriveapp/spacedrive",
+      "publishedAt": "2022-04-27T21:56:53Z",
+      "content": "Spacedrive\r\nA file explorer from the future.\r\n spacedrive.app »\r\nDownload for \r\n macOS\r\n ·\r\n Windows\r\n ·\r\n Linux\r\n ·\r\n iOS\r\n ·\r\n watchOS\r\n ·\r\n Android\r\n ~ links will be added once release available ~… [+6233 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Amazon.com"
+      },
+      "author": "aws@amazon.com",
+      "title": "Announcing Amplify Android library (Developer Preview), designed for Kotlin",
+      "description": "Today, we are announcing the Developer Preview of the Amplify Android library that has been rewritten for Kotlin. This initial release enables Android developers to add cloud-based app features, including Auth, Storage, DataStore, and APIs for their Kotlin-ba…",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2022/05/amplify-android-library-developer-preview-kotlin/",
+      "urlToImage": "https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png",
+      "publishedAt": "2022-05-10T18:18:40Z",
+      "content": "Posted On: May 10, 2022\r\nToday, we are announcing the Developer Preview of the Amplify Android library that has been rewritten for Kotlin. This initial release enables Android developers to add cloud… [+927 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "InfoQ.com"
+      },
+      "author": "Andrea Messetti",
+      "title": "Kotlin Asynchronous Framework, Ktor 2.0, Released with New Plugins Feature",
+      "description": "Ktor 2.0, the Kotlin framework to create asynchronous client and server applications, has been released with new features and breaking changes. By Andrea Messetti",
+      "url": "https://www.infoq.com/news/2022/05/ktor-kotlin-framework/",
+      "urlToImage": "https://res.infoq.com/news/2022/05/ktor-kotlin-framework/en/headerimage/generatedHeaderImage-1651428480805.jpg",
+      "publishedAt": "2022-05-02T05:30:00Z",
+      "content": "After more than a year of development, Ktor 2.0, the Kotlin framework to create asynchronous client and server applications, has been released with new features and breaking changes.\r\nOn the server s… [+2574 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Raywenderlich.com"
+      },
+      "author": null,
+      "title": "Top 5 Takeaways From Google I/O 2022 For Android Developers [SUBSCRIBER]",
+      "description": "<p>Google’s annual developer conference has a lot in store for Android developers in 2022. This video is a rundown of the most important aspects of Google I/O 2022 for Android developers.</p>",
+      "url": "https://www.raywenderlich.com/34177184-top-5-takeaways-from-google-i-o-2022-for-android-developers",
+      "urlToImage": "https://assets.robles.raywenderlich.com/videos/027b4be45f5bc51cdb809f2c421e72446345425dbc9c0bb80c7026403d266952/images/99a13f432e39bdc6f33908312828e10d/original.png",
+      "publishedAt": "2022-05-19T00:00:00Z",
+      "content": "A raywenderlich.com subscription is the best way to learn and master mobile development plans start at just $19.99/month!\r\nLearn iOS, Swift, Android, Kotlin, Flutter and Dart development and unlock o… [+51 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Raywenderlich.com"
+      },
+      "author": null,
+      "title": "Units & Measurement in iOS [SUBSCRIBER]",
+      "description": "<p>Learn how to model units of physical quantities with Measurements and Units from Foundation for safer conversion and display of meaningful values.</p>",
+      "url": "https://www.raywenderlich.com/20656790-units-measurement-in-ios",
+      "urlToImage": "https://assets.robles.raywenderlich.com/videos/1c366e90898b8a02f387263fa55db85b587e0363830c0cfe58916fa908940944/images/c65fa8795c3d3fdcbb1ce83b8fc15066/original.png",
+      "publishedAt": "2022-05-24T00:00:00Z",
+      "content": "A raywenderlich.com subscription is the best way to learn and master mobile development plans start at just $19.99/month!\r\nLearn iOS, Swift, Android, Kotlin, Flutter and Dart development and unlock o… [+51 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Xania.org"
+      },
+      "author": null,
+      "title": "Happy 10th Birthday Compiler Explorer",
+      "description": "Wishing Compiler Explorer a very happy tenth birthday",
+      "url": "https://xania.org/202206/happy-birthday-ce",
+      "urlToImage": null,
+      "publishedAt": "2022-05-22T16:55:24Z",
+      "content": "Today is Compiler Explorers 10th Birthday:\r\ncommit 15ea5e164b55c2b5ee0d3b432e3984b8f361afd2\r\nAuthor: Matt Godbolt &lt;matt@godbolt.org&gt;\r\nDate: Tue May 2221:07:40 2012 -0500\r\nInitial import of GCC-… [+6344 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Googleblog.com"
+      },
+      "author": "Android Developers",
+      "title": "Announcing Compose for Wear OS Beta!",
+      "description": "Posted by Kseniia Shumelchyk , Developer Relations Engineer, and John Nichol, Tech Lead of Compose for Wear OS              Today we’re...",
+      "url": "https://android-developers.googleblog.com/2022/05/announcing-compose-for-wear-os-beta.html",
+      "urlToImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrfM5DyOkb4yfuiuJEOelmS5x4sTioxYCRPdnoSI1h64j-xWkWq9Wk0mZ61ljUw_tkO7NXxKsDUb5TbYMHLxLxhcY24rzNnnDhjzFOOClkM_WH--2bTLJFq93HODS7PHebGl00oluu0Sg5p0MTeNAfusLgHvorSxTDS26YwnQXkTJsDq2HJC36m7Jl/w1200-h630-p-k-no-nu/image4.png",
+      "publishedAt": "2022-05-11T19:20:00Z",
+      "content": "Posted by Kseniia Shumelchyk, Developer Relations Engineer, and John Nichol, Tech Lead of Compose for Wear OS\n\n\n  \n\n <!-- Yay, no errors, warnings, or alerts! -->\n\n\nToday we’re launching the Beta rel… [+7021 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "9to5google.com"
+      },
+      "author": "Kyle Bradshaw",
+      "title": "Everything new for developers at Google I/O: Android Studio, Jetpack Compose, and more",
+      "description": "At its core, Google I/O has always been a developer-focused event. Here are the biggest announcements that Google made during the I/O developer keynote and beyond.\n more…\nThe post Everything new for developers at Google I/O: Android Studio, Jetpack Compose, a…",
+      "url": "https://9to5google.com/2022/05/11/everything-developers-google-io-android-jetpack-flutter-firebase/",
+      "urlToImage": "https://i0.wp.com/9to5google.com/wp-content/uploads/sites/4/2019/05/google_io_2-1.jpg?resize=1200%2C628&quality=82&strip=all&ssl=1",
+      "publishedAt": "2022-05-11T19:23:53Z",
+      "content": "At its core, Google I/O has always been a developer-focused event. Here are the biggest announcements that Google made during the I/O developer keynote and beyond.\r\nThis post will be steadily updated… [+7279 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Googleblog.com"
+      },
+      "author": "Google Developers",
+      "title": "Helping you build across devices, platforms, and the world",
+      "description": "This week at I/O, we shared the beginning of a long-term effort to connect our developer products to work even better together.",
+      "url": "https://developers.googleblog.com/2022/05/IO-2022-Developer-Keynote-Recap_0524439822.html",
+      "urlToImage": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinYXV5BKM2aMut-SCjKlcEhhBYLGLKU2jxyf84y4BT7HpL9sUYbPjiRg0Ed5W4_f9FWxXTfoLfdi9_t8A520bSBIQ0a-f-nNlw-6vFKNS1QW7wh2Ut_IcaLM5-wg9DwrTYNfDscpG-0_3xyjG22r0pUf8_OJz-BJ0MPa0KeUfJh4g2TMLgxi_7W0ao/w1200-h630-p-k-no-nu/GoogleIO-Recap_1024x512.png",
+      "publishedAt": "2022-05-11T21:47:00Z",
+      "content": "Posted by Jeanine Banks, VP &amp; General Manager of Developer X &amp; Head of Developer Relations\r\nWe’re thrilled to be back at the Shoreline Amphitheatre hosting Google I/O this week. It’s great to… [+2849 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Deprogrammaticaipsum.com"
+      },
+      "author": "Graham Lee",
+      "title": "On the Duopoly of Mobile",
+      "description": "It is surprising how quickly the duopoly of iOS and Android, Apple and Google, became entrenched. At the 2007 iPhone launch event, Steve Jobs compared the touchscreen-centric iPhone UI with four ot…",
+      "url": "https://deprogrammaticaipsum.com/on-the-duopoly-of-mobile/",
+      "urlToImage": "https://i0.wp.com/deprogrammaticaipsum.com/wordpress/wp-content/uploads/2022/05/bp-miller-Sgb3OmpipWY-unsplash-scaled-e1651307730274.jpg?fit=1024%2C768&ssl=1",
+      "publishedAt": "2022-05-02T15:17:38Z",
+      "content": "It is surprising how quickly the duopoly of iOS and Android, Apple and Google, became entrenched. At the 2007 iPhone launch event, Steve Jobs compared the touchscreen-centric iPhone UI with four othe… [+7456 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Medium"
+      },
+      "author": "Chris Nielsen",
+      "title": "I replaced my native iOS app with a cross platform web app and no-one noticed",
+      "description": "So it all started when I came up with the idea for an app that helps parents get their kids ready for school. I’m a dad with 3 kids and I was annoyed by the fact that at work I have dozens of…",
+      "url": "https://medium.com/@ChrisNielsen123/i-replaced-my-native-ios-app-with-a-cross-platform-web-app-and-no-one-noticed-1653901ce244",
+      "urlToImage": "https://miro.medium.com/max/1200/1*JVne_TIPSrVM4sF_NsNuMw.png",
+      "publishedAt": "2022-05-03T01:55:13Z",
+      "content": "I replaced my native iOS app with a cross platform web app and no-one noticed\r\nSo it all started when I came up with the idea for an app that helps parents get their kids ready for school.\r\nIm a dad … [+7825 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Github.blog"
+      },
+      "author": "Michelle Mannering",
+      "title": "Release Radar · April 2022 Edition",
+      "description": "Each month, we highlight open source projects that have shipped major updates. These include everything from world-changing technology to developer tooling, and weekend projects. Here are our top staff picks on projects that shipped major version releases in …",
+      "url": "https://github.blog/2022-05-20-release-radar-apr-2022/",
+      "urlToImage": "https://github.blog/wp-content/uploads/2022/05/Release-Radar-April-2022.jpg?fit=1200%2C630",
+      "publishedAt": "2022-05-20T11:54:43Z",
+      "content": "Each month, we highlight open source projects that have shipped major updates. These include everything from world-changing technology to developer tooling, and weekend projects. Here are our top sta… [+5769 chars]"
+    }
+  ]
+}

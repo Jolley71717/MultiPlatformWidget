@@ -23,46 +23,19 @@ internal class NewsAPITest {
             assertTrue(articles.isNotEmpty())
         }
     }
+    @Test
+    fun `search kotlin Search`() {
+        runBlocking {
+            val articles = newsAPI.search(REAL_KOTLIN_RESULTS)
+            assertTrue(articles.isNotEmpty())
+        }
+    }
 
     @Test
     fun `search but no results`() {
         runBlocking {
             val articles = newsAPI.search(NO_RESULTS)
             assertTrue(articles.isEmpty(), "Expected no results but found ${articles.size}")
-        }
-    }
-
-    @Ignore
-    @Test
-    /**
-     * This test can be run locally if you have access ta the api key
-     */
-    fun `search usingRealInfo`() {
-        println("something is starting 1111111111")
-        val newssssssApi = NewsAPI()
-        println("Api Created 1111111111")
-        runBlocking {
-            println("something is running in coroutine 1111111111")
-            val articles = newssssssApi.search(REAL_KOTLIN_RESULTS)
-            println("waiting to start 11111111")
-            assertTrue(articles.isNotEmpty(), "Expected no results but found ${articles.size}")
-        }
-    }
-
-    @Ignore
-    @Test
-    /**
-     * This test can be run locally if you have access ta the api key
-     */
-    fun `search using ktor`() {
-        println("something is starting 1111111111")
-        val newssssssApi = NewsAPI()
-        println("Api Created 1111111111")
-        runBlocking {
-            println("something is running in coroutine 1111111111")
-            val html = newssssssApi.getHtml()
-            println("waiting to start 11111111")
-            assertTrue(html.isNotBlank(), "Expected no results but found ${html.length}")
         }
     }
 
@@ -86,6 +59,13 @@ internal class NewsAPITest {
                     headers = headersOf(HttpHeaders.ContentType, "application/json")
                 )
             }
+            requestUrl.contains(REAL_KOTLIN_RESULTS) -> {
+                respond(
+                    content = ByteReadChannel(StreamedFileResource.KOTLIN_JSON),
+                    status = HttpStatusCode.OK,
+                    headers = headersOf(HttpHeaders.ContentType, "application/json")
+                )
+            }
             else ->
                 respond(
                     content = ByteReadChannel("""{}"""),
@@ -95,7 +75,7 @@ internal class NewsAPITest {
         }
     }
 
-    private val newsAPI = NewsAPI(ApiClient(mockEngine))
+    private val newsAPI = NewsAPIKt(ApiClient(mockEngine))
 
     companion object {
         private const val ALL_ARTICLES = "all_articles"

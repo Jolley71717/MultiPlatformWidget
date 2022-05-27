@@ -13,18 +13,18 @@ import kotlin.jvm.JvmField
 @Serializable
 data class ArticleKT(
     val id: String? = uuid4().toString(),
-    val source: Source,
-    val title: String,
-    val url: String,
+    val source: Source?,
+    val title: String?,
+    val url: String?,
     val publishedAt: String,
     val author: String?,
     val description: String?,
-    val urlToImage: String,
+    val urlToImage: String?,
 ){
     // Todo these are carry-overs from swift not doing defaults well i guess
     val authorText = author ?: ""
     val descriptionText = description ?: ""
-    fun getCaptionText(): String = "${source.name} ‧ $publishedAt" // todo look at creating specific ones for ios
+    fun getCaptionText(): String = "${source?.name} ‧ $publishedAt" // todo look at creating specific ones for ios
 
 
 //    static var previewCategoryArticles: [CategoryArticlesKt]? {

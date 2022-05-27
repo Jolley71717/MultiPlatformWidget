@@ -9,10 +9,11 @@ import io.ktor.client.request.get
 import io.ktor.client.statement.bodyAsText
 import io.ktor.http.HttpStatusCode
 import io.ktor.util.logging.KtorSimpleLogger
+import kotlinx.coroutines.coroutineScope
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 
-class NewsAPI constructor(apiClient: ApiClient) {
+class NewsAPIKt constructor(apiClient: ApiClient) {
     constructor() : this(ApiClient())
 
     private val logger = KtorSimpleLogger("NewsApi")
@@ -21,23 +22,23 @@ class NewsAPI constructor(apiClient: ApiClient) {
     private val apiKey = ApiKeyConfig.apiKey() // todo figure out how to configure this external to code
 
     suspend fun search(query: String): List<ArticleKT> {
-        return fetchArticles(generateSearchUrl(query))
+        return coroutineScope { fetchArticles(generateSearchUrl(query)) }
     }
 
     suspend fun fetch(category: CategoryKt): List<ArticleKT> {
-        return fetchArticles(generateNewsURL(category))
+        return coroutineScope { fetchArticles(generateNewsURL(category)) }
     }
 
     private val fakeclient = HttpClient()
     suspend fun getHtml(): String {
-        val response = fakeclient.get("https://ktor.io/docs")
-        return response.bodyAsText()
+        return coroutineScope {
+            val response = fakeclient.get("https://ktor.io/docs")
+            response.bodyAsText()
+        }
     }
 
     private suspend fun fetchArticles(url: String): List<ArticleKT> {
-        println("Getting ready to pull the url: $url")
         val response = httpClient.get(url)
-        println("got a resposne with status: ${response.status.value}")
         val jsonBody = response.bodyAsText()
         val articles = if (response.status.value.betweenI(200..299, 400..499) &&
             response.status == HttpStatusCode.OK

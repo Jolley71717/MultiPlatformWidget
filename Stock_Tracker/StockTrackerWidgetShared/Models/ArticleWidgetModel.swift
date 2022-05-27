@@ -22,7 +22,6 @@ struct ArticleWidgetModel: Identifiable {
             case .placeholder:
                 return UUID()
             case .article(let article, _):
-//            return UUID()
             return  UUID(uuidString: article.id!) ?? UUID()
         }
     }
@@ -32,7 +31,7 @@ struct ArticleWidgetModel: Identifiable {
         case .placeholder:
             return "this is just placeholder text"
         case .article(let article, _):
-            return article.title
+            return article.title ?? ""
         }
     }
     
@@ -51,7 +50,7 @@ struct ArticleWidgetModel: Identifiable {
         case .placeholder:
             return URL(string: "Stock_Tracker://home")!
         case .article(let article, _):
-            return URL(string: article.url)!
+            return URL(string: article.url ?? "")!
         }
     }
     

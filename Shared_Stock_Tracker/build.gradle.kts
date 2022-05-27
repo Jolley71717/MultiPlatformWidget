@@ -11,8 +11,16 @@ repositories {
 }
 
 kotlin {
-    val kotlinxVersion: String by project
+    val kotlinxSerializationVersion: String by project
+    val kotlinxCoroutinesVersion: String by project
     val ktorVersion: String by project
+
+    targets.withType<KotlinNativeTarget> {
+        binaries.all {
+            val mode = System.getenv("DEBUG_MODE") ?: "enable"
+            freeCompilerArgs = freeCompilerArgs + "-Xadd-light-debug=$mode"
+        }
+    }
     android()
 
     listOf(
@@ -29,7 +37,8 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation("com.benasher44:uuid:0.4.0")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxVersion")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinxSerializationVersion")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinxCoroutinesVersion")
                 implementation("io.ktor:ktor-client-core:$ktorVersion")
                 implementation("io.ktor:ktor-client-cio:$ktorVersion")
                 api("io.ktor:ktor-server-content-negotiation:$ktorVersion")
@@ -61,6 +70,7 @@ kotlin {
             iosSimulatorArm64Main.dependsOn(this)
             dependencies {
                 implementation("io.ktor:ktor-client-darwin:$ktorVersion")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinxCoroutinesVersion")
             }
         }
         val iosX64Test by getting
